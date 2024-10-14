@@ -1,0 +1,24 @@
+meta {
+  name: Test
+  type: http
+  seq: 2
+}
+
+post {
+  url: http://localhost:8080/api/recipes
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "foodName": "test",
+    "brand": "brandtest",
+    "format": "formattest",
+    "prot": "prottest",
+    "fat": "fattest",
+    "carb": "carbtest",
+    "macro_type": "CARB",
+    "kcal": "30"
+  }
+}
