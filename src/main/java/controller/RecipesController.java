@@ -21,6 +21,7 @@ public class RecipesController {
     @RequestMapping(method = RequestMethod.POST)
     public Ingredient addNewIngredient(@RequestBody Ingredient ingredient) {
         logger.debug("calling test");
+        logger.debug("calling test");
 
         EntityManagerFactory emf = Persistence.createEntityManagerFactory("RECIPE_MAKER");
         EntityManager em = emf.createEntityManager();
